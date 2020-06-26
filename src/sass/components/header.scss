@@ -1,0 +1,126 @@
+.header {
+  &__main-nav {
+    padding-bottom: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    padding-top: 54px;
+    width: 434px;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  &__nav-categories {
+    margin: 0;
+    padding: 0;
+    width: 284px;
+    list-style: none;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  &__nav-category {
+    &__nav-link {
+      display: block;
+      color: #ffffff;
+      text-decoration: none;
+      font-family: "MADE Outer Sans";
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__logo {
+    padding-top: 50px;
+    padding-right: 50px;
+    display: block;
+  }
+
+  &__support-information {
+    display: flex;
+    width: 362px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  &__phone-number {
+    margin: 0;
+    padding: 0;
+    padding-top: 54px;
+    display: block;
+    color: #ffffff;
+    font-family: "MADE Outer Sans";
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__shopping-bag {
+    display: block;
+    padding-top: 54px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+
+  &__shopping-bag::after {
+    content: url('../../images/header-images/vector.png');
+    width: 30px;
+    height: 30px;
+    padding-top: 54px;
+    top: -10px;
+    right: -14px;
+    font-family: "MADE Outer Sans";
+    font-size: 12px;
+    position: absolute;
+    display: block;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 26px;
+    
+  }
+
+  &__language {
+    width: 56px;
+    padding-top: 54px;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    font-family: "MADE Outer Sans";
+
+  &__de,
+  &__eng { 
+    display: block;
+    text-decoration:none;   
+    color: rgba(255, 255, 255, 0.3);
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+  }
+}

@@ -1,0 +1,130 @@
+.movies {
+  &__movies-list {
+    margin: 0;
+    padding: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__movie {
+    position: relative;
+    width: 351px;
+  }
+
+  &__movie__link {
+    display: block;
+  }
+
+  &__movie__about {
+    position: absolute;
+    width: 246px;
+    min-height: 120px;
+    bottom: 6%;
+    right: 10%;
+  }
+
+  &__movie__name {
+    margin: 0;
+    padding: 0;
+    font-family: "MADE Outer Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+  }
+
+  &__movie__genre {
+    margin: 0;
+    padding: 0;
+    padding-top: 36px;
+    font-family: "MADE Outer Sans Thin";
+    font-style: normal;
+    font-weight: 250;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+
+  &__movie__davinci-name {
+    padding-bottom: 8px;
+  }
+
+  &__movie__davinci-genre {
+    padding-top: 60px;
+  }
+
+  &__movie__nun-name {
+    padding-top: 40px;
+  }
+
+  &__movie__horror-genre::after {
+    content: "";
+    width: 28px;
+    height: 18px;
+    padding-right: 44px;
+    background-image: url("../../images/movie-section-images/union-movie-section.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__overlay {
+    display: flex;
+    width: 360px;
+    padding: 8px 10px 0 10px;
+    background-color: red;
+    transform: matrix(1, 0.01, 0.01, -1, 0, 0);
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%) matrix(1, 0.01, 0.01, 1, 0, 0);
+    justify-content: space-between;
+    visibility: hidden;
+  }
+
+  &__overlay__discount,
+  &__overlay__limited, 
+  &__overlay__time {
+    margin: 0;
+    padding: 0;
+  }
+
+&__overlay__discount {
+    font-family: "Morganite ExtraBold";
+    font-style: normal;
+    font-size: 56px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__overlay__limited {
+    font-family: "MADE Outer Sans Thin";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+
+  &__overlay__time {
+    padding-left: 40px;
+    font-family: "MADE Outer Sans";
+    font-style: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+  }
+
+  &__movie:hover &__overlay {
+    visibility: visible;
+  }
+}
